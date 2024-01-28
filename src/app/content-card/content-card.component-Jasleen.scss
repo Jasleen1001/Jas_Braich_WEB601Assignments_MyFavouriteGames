@@ -1,5 +1,5 @@
 .content-card {
-    border: 1px solid #000;
+    border: 1px solid #ccc;
     padding: 15px;
     margin: 10px;
     cursor: pointer;
@@ -18,8 +18,8 @@
     }
   
     img {
-      max-width: auto;
-      height: 200px;
+      max-width: 100%;
+      height: auto;
       margin-top: 10px;
     }
   }
