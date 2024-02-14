@@ -3,11 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Jas_Braich_MyFavouriteGames": {
+    "Warehouse-project": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "less"
         }
       },
       "root": "",
@@ -17,20 +17,20 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/jas-braich-my-favourite-games",
+            "outputPath": "dist/warehouse-project",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
+            "inlineStyleLanguage": "less",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.less"
             ],
             "scripts": []
           },
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Jas_Braich_MyFavouriteGames:build:production"
+              "buildTarget": "Warehouse-project:build:production"
             },
             "development": {
-              "buildTarget": "Jas_Braich_MyFavouriteGames:build:development"
+              "buildTarget": "Warehouse-project:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "Jas_Braich_MyFavouriteGames:build"
+            "buildTarget": "Warehouse-project:build"
           }
         },
         "test": {
@@ -84,21 +84,18 @@
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
+            "inlineStyleLanguage": "less",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.less"
             ],
             "scripts": []
           }
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
   }
 }
